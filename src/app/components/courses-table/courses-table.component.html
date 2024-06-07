@@ -1,0 +1,36 @@
+<!-- Registration Start -->
+<div class="container-fluid py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-12 mx-auto text-center">
+        <div class="widget-next-match">
+          <table class="table custom-table">
+            <thead>
+              <tr>
+                <th>id</th>
+                <th>Course Name</th>
+                <th>Course description</th>
+
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let c of courses">
+                <td>{{ c.id }}</td>
+                <td>{{ c.name }}</td>
+                <td>{{ c.description }}</td>
+
+                <button class="btn btn-danger" (click)="deleteMatch(c._id)">
+                  Delete
+                </button>
+                <button class="btn btn-info ml-2">Details</button>
+                <button class="btn btn-secondary ml-2">Edit</button>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Registration End -->

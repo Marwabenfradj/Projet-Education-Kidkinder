@@ -1,0 +1,16 @@
+<!-- Class Start -->
+<div class="container-fluid pt-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 mb-5" *ngFor="let c of courses">
+        <app-course [course]="c"></app-course>
+      </div>
+      <div class="col-lg-4 mb-5">
+        <app-course></app-course>
+      </div>
+      <div class="col-lg-4 mb-5">
+        <app-course></app-course>
+      </div>
+    </div>
+  </div>
+</div>
