@@ -35,6 +35,14 @@ const Course = require("./models/course");
 
 //business logic
 
+//Business Logic : signUp
+app.post("/users", (req, res) => {
+  console.log("here into BL signUp", req.body);
+  let user = new User(req.body);
+  user.save();
+  res.json({ msg: "Added with success" });
+});
+
 //Business Logic : Add Course
 app.post("/courses", (req, res) => {
   console.log("here into Add Course", req.body);

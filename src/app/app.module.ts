@@ -10,8 +10,7 @@ import { LoginComponent } from './components/login/login.component';
 import { SignUpComponent } from './components/sign-up/sign-up.component';
 import { AddCourseComponent } from './components/add-course/add-course.component';
 import { CoursesComponent } from './components/courses/courses.component';
-import { AddTeacherComponent } from './components/add-teacher/add-teacher.component';
-import { TeachersComponent } from './components/teachers/teachers.component';
+
 import { CourseComponent } from './components/course/course.component';
 import { TeacherComponent } from './components/teacher/teacher.component';
 import { AdminComponent } from './components/admin/admin.component';
@@ -29,8 +28,6 @@ import { HttpClientModule } from '@angular/common/http';
     SignUpComponent,
     AddCourseComponent,
     CoursesComponent,
-    AddTeacherComponent,
-    TeachersComponent,
     CourseComponent,
     TeacherComponent,
     AdminComponent,
