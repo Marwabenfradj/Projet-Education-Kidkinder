@@ -7,6 +7,7 @@ const UserSchema = mongoose.Schema({
   lastName: String,
   email: String,
   password: String,
+  role: String,
 });
 //Affect model name to schema
 const user = mongoose.model("User", UserSchema);
